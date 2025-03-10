@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Bulk Supply Expertise",
+    title: "Bulk & Single Order Supply",
     description:
-      "Specialized in large-scale medical equipment supply with competitive wholesale pricing for healthcare facilities.",
+      "Expertise in providing both bulk and single order medical equipment supplies delivered all over India at competitive prices.",
     icon: "🏥",
     image:
       "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=500&auto=format",

@@ -21,10 +21,17 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
             Premium Medical Equipment Supplier
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-8 px-4">
+          <p className="text-lg md:text-xl text-gray-200 mb-4 px-4">
             Your trusted partner in providing high-quality medical equipment and
-            supplies for hospitals, clinics, and healthcare facilities. Bulk
-            orders available with competitive pricing.
+            expert repair services for hospitals, clinics, and healthcare
+            facilities.
+          </p>
+          <p className="text-lg md:text-xl text-gray-200 mb-8 px-4">
+            We now provide{" "}
+            <span className="text-teal-400 font-bold">
+              delivery all over India
+            </span>
+            .
           </p>
           <Link to="/products">
             <motion.button

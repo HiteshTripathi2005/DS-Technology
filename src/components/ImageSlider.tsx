@@ -26,7 +26,7 @@ const ImageSlider = ({ images, productName }: ImageSliderProps) => {
             key={currentIndex}
             src={images[currentIndex]}
             alt={`${productName} - Image ${currentIndex + 1}`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
