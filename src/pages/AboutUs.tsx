@@ -103,7 +103,7 @@ const AboutUs = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&auto=format"
+              src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=800&auto=format"
               alt="Surgical instruments manufacturing"
               className="rounded-lg shadow-xl w-full max-w-4xl h-auto object-cover"
             />

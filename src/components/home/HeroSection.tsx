@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="relative h-[90vh] flex items-center">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1600&auto=format"
+          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&auto=format"
           alt="Surgical Instruments Background"
           className="w-full h-full object-cover brightness-50"
         />
