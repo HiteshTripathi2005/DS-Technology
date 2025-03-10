@@ -10,7 +10,7 @@ const ContactSection = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-3xl md:text-4xl font-bold text-center mb-12 text-teal-800"
           >
-            Business Inquiries
+            Contact Dharmraj Surgical Technologies
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
@@ -22,10 +22,12 @@ const ContactSection = () => {
                 Contact Information
               </h3>
               <div className="space-y-4 text-teal-700">
-                <p className="flex items-center">
-                  <span className="mr-2">📍</span> Shop No 01, Delta Residency,
-                  Guru Kripa Complex, Opp. Sai City, Nalasopara (W), Dist -
-                  Palghar 401203
+                <p className="flex items-start">
+                  <span className="mr-2 mt-1">📍</span>
+                  <span>
+                    Shop No 01, Delta Residency, Guru Kripa Complex, Opp. Sai
+                    City, Nalasopara (W), Dist - Palghar 401203
+                  </span>
                 </p>
                 <p className="flex items-center">
                   <span className="mr-2">📞</span> Sales: +91 9359333692
@@ -42,20 +44,26 @@ const ContactSection = () => {
               className="bg-white p-8 rounded-xl shadow-lg"
             >
               <h3 className="text-xl font-semibold mb-4 text-teal-900">
-                Business Hours
+                Our Services
               </h3>
               <div className="space-y-4 text-teal-700">
-                <p className="flex justify-between">
-                  <span>Monday - Friday:</span>
-                  <span>9:00 AM - 6:00 PM</span>
+                <p className="flex items-start">
+                  <span className="mr-2 mt-1">🔧</span>
+                  <span>
+                    Manufacturing of high-quality surgical instruments
+                  </span>
                 </p>
-                <p className="flex justify-between">
-                  <span>Saturday:</span>
-                  <span>10:00 AM - 4:00 PM</span>
+                <p className="flex items-start">
+                  <span className="mr-2 mt-1">⚙️</span>
+                  <span>Expert repair and maintenance services</span>
                 </p>
-                <p className="flex justify-between">
-                  <span>Sunday:</span>
-                  <span>Closed</span>
+                <p className="flex items-start">
+                  <span className="mr-2 mt-1">🌎</span>
+                  <span>Export to healthcare facilities worldwide</span>
+                </p>
+                <p className="flex items-start">
+                  <span className="mr-2 mt-1">📦</span>
+                  <span>Custom orders and bulk supply available</span>
                 </p>
               </div>
             </motion.div>

@@ -2,28 +2,28 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Bulk & Single Order Supply",
+    title: "Premium Surgical Instruments",
     description:
-      "Expertise in providing both bulk and single order medical equipment supplies delivered all over India at competitive prices.",
-    icon: "🏥",
+      "We manufacture and supply high-quality surgical instruments crafted from premium-grade stainless steel using cutting-edge technology.",
+    icon: "🔧",
+    image:
+      "https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=500&auto=format",
+  },
+  {
+    title: "Expert Repair Services",
+    description:
+      "Our skilled technicians provide precision repairs and maintenance for all types of surgical instruments, extending their lifespan and ensuring optimal performance.",
+    icon: "⚙️",
     image:
       "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=500&auto=format",
   },
   {
-    title: "Quality Assurance",
+    title: "Global Presence",
     description:
-      "All equipment meets international medical standards with proper certification and quality guarantees.",
-    icon: "✓",
+      "Our products and services are trusted by medical professionals across Europe, the USA, the Middle East, and Asia.",
+    icon: "🌎",
     image:
       "https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=500&auto=format",
-  },
-  {
-    title: "Technical Support",
-    description:
-      "Dedicated technical team for installation, training, and after-sales support for all equipment.",
-    icon: "🔧",
-    image:
-      "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=500&auto=format",
   },
 ];
 
@@ -36,7 +36,7 @@ const FeaturesSection = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-3xl md:text-4xl font-bold text-center mb-16 text-teal-800"
         >
-          Why Partner With Us?
+          Our Specialties
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {features.map((feature, index) => (
