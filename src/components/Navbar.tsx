@@ -57,6 +57,7 @@ const Navbar = () => {
           >
             Home
           </NavLink>
+
           <NavLink
             to="/products"
             className={({ isActive }) =>
@@ -68,6 +69,18 @@ const Navbar = () => {
             }
           >
             Products
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              `hover:text-gray-200 text-white transition-colors relative after:absolute after:left-0 after:bottom-[-4px] after:h-0.5 after:bg-white  after:transition-all after:duration-300 ${
+                isActive
+                  ? "text-white after:w-full"
+                  : "after:w-0 hover:after:w-full"
+              }`
+            }
+          >
+            About Us
           </NavLink>
         </div>
       </div>

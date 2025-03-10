@@ -3,16 +3,6 @@ import { motion } from "framer-motion";
 const CompanyListingsSection = () => {
   const companies = [
     {
-      name: "Amazon",
-      logo: "https://assets.upstox.com/content/assets/images/cms/202451/Amazon%20logo.png",
-      link: "https://amazon.com",
-    },
-    {
-      name: "Flipkart",
-      logo: "https://cdn.freebiesupply.com/logos/large/2x/flipkart-logo-png-transparent.png",
-      link: "https://flipkart.com",
-    },
-    {
       name: "1mg",
       logo: "https://www.1mg.com/images/tata_1mg_logo.svg",
       link: "https://1mg.com",
@@ -41,7 +31,7 @@ const CompanyListingsSection = () => {
         >
           Find our products on leading healthcare marketplaces
         </motion.p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8 items-center justify-items-center">
           {companies.map((company) => (
             <motion.a
               href={company.link}

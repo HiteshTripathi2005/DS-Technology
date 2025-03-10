@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import ProductInfo from "./pages/ProductInfo";
+import AboutUs from "./pages/AboutUs";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Footer from "./components/Footer";
 
@@ -16,6 +17,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
             <Route path="/product/:id" element={<ProductInfo />} />
+            <Route path="/about" element={<AboutUs />} />
           </Routes>
         </div>
         <WhatsAppButton />
