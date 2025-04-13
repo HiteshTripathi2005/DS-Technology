@@ -3,6 +3,8 @@ import { useParams, Link } from "react-router-dom";
 import { products } from "../data/products"; // Updated import
 import ImageSlider from "../components/ImageSlider";
 import { useEffect } from "react";
+import SEO from "../components/SEO";
+import ProductJsonLd from "../components/ProductJsonLd";
 
 const ProductInfo = () => {
   const { id } = useParams();
@@ -16,6 +18,11 @@ const ProductInfo = () => {
   if (!product) {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
+        <SEO
+          title="Product Not Found"
+          description="The requested product could not be found. Browse our complete catalog of surgical instruments and medical equipment."
+          canonicalUrl="https://yourdomain.com/products"
+        />
         <h2 className="text-2xl font-bold mb-4 text-teal-900">
           Product not found
         </h2>
@@ -31,6 +38,25 @@ const ProductInfo = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+        title={product.name}
+        description={`${product.description} - High-quality ${product.category} from Dharmraj Surgical Technologies. Features include ${product.features[0]}.`}
+        canonicalUrl={`https://yourdomain.com/product/${product.id}`}
+        keywords={`${product.name}, ${product.category}, surgical instruments, medical equipment, hospital supplies`}
+        ogImage={product.images[0]}
+      />
+
+      {/* Add JSON-LD structured data */}
+      <ProductJsonLd
+        name={product.name}
+        description={product.description}
+        image={product.images[0]}
+        price={product.price}
+        inStock={product.stock > 0}
+        category={product.category}
+        url={`https://yourdomain.com/product/${product.id}`}
+      />
+
       <div className="container mx-auto px-4 py-8">
         {/* Back Navigation */}
         <motion.div

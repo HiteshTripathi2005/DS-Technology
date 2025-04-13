@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to access all content
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Prevent access to admin or private areas if you add them later
+# Disallow: /admin/
+# Disallow: /private/
