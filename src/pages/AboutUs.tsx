@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import SEO from "../components/SEO";
 
 const AboutUs = () => {
   // Add scroll to top behavior when component mounts
@@ -47,12 +46,6 @@ const AboutUs = () => {
 
   return (
     <div className="bg-gray-50 overflow-x-hidden">
-      <SEO
-        title="About Dharmraj Surgical Technologies"
-        description="Learn about Dharmraj Surgical Technologies, a leading manufacturer and exporter of high-quality surgical instruments and medical equipment. Discover our expertise in manufacturing and repairing precision surgical tools."
-        canonicalUrl="https://yourdomain.com/about"
-        keywords="surgical instruments manufacturer, medical equipment supplier, surgical equipment repair, hospital instruments"
-      />
       {/* Hero Section */}
       <section className="relative py-20 bg-teal-800 text-white">
         <div className="container mx-auto px-4">
