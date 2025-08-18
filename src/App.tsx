@@ -6,6 +6,7 @@ import ProductInfo from "./pages/ProductInfo";
 import AboutUs from "./pages/AboutUs";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Footer from "./components/Footer";
+import NoRoute from "./pages/NoRoute";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Route path="/products" element={<Products />} />
             <Route path="/product/:id" element={<ProductInfo />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="*" element={<NoRoute />} />
           </Routes>
         </div>
         <WhatsAppButton />

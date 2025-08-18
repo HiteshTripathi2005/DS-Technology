@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   // Add scroll to top behavior when component mounts
@@ -43,6 +44,17 @@ const AboutUs = () => {
         "Our products and services are trusted by medical professionals across Europe, the USA, the Middle East, and Asia.",
     },
   ];
+
+  const handleClick = () => {
+    const phoneNumber = "+919359333692";
+    const message =
+      "Hello! I'm interested in your medical equipment for our hospital/medical facility. Would like to know more about your products and bulk pricing.";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(
+      `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
+      "_blank"
+    );
+  };
 
   return (
     <div className="bg-gray-50 overflow-x-hidden">
@@ -284,16 +296,19 @@ const AboutUs = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-white text-teal-800 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors text-lg font-semibold"
+                onClick={handleClick}
               >
                 Contact Us
               </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-teal-800 transition-colors text-lg font-semibold"
-              >
-                View Products
-              </motion.button>
+              <Link to="/products">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-teal-800 transition-colors text-lg font-semibold"
+                >
+                  View Products
+                </motion.button>
+              </Link>
             </div>
           </motion.div>
         </div>
