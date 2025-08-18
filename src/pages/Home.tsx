@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import SEO from "../components/SEO";
 import HeroSection from "../components/home/HeroSection";
 import FeaturesSection from "../components/home/FeaturesSection";
 import CompanyListingsSection from "../components/home/CompanyListingsSection";
@@ -13,6 +14,11 @@ const Home = () => {
 
   return (
     <div className="w-full">
+      <SEO
+        title="Home"
+        description="Premium hospital products and medical equipment. We offer a wide range of surgical instruments and healthcare supplies for medical professionals."
+        canonicalUrl="https://yourdomain.com/"
+      />
       <HeroSection />
       <FeaturesSection />
       <CompanyListingsSection />

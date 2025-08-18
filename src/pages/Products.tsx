@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { products } from "../data/products";
+import SEO from "../components/SEO";
 
 const Products = () => {
   useEffect(() => {
@@ -15,6 +16,12 @@ const Products = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 md:py-16">
+      <SEO
+        title="Products Catalog"
+        description="Browse our comprehensive catalog of high-quality surgical instruments and medical equipment. Find the perfect hospital products for your healthcare facility."
+        canonicalUrl="https://yourdomain.com/products"
+        keywords="surgical instruments, medical catalog, hospital equipment, healthcare products"
+      />
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 const AboutUs = () => {
   // Add scroll to top behavior when component mounts
@@ -45,19 +45,14 @@ const AboutUs = () => {
     },
   ];
 
-  const handleClick = () => {
-    const phoneNumber = "+919359333692";
-    const message =
-      "Hello! I'm interested in your medical equipment for our hospital/medical facility. Would like to know more about your products and bulk pricing.";
-    const encodedMessage = encodeURIComponent(message);
-    window.open(
-      `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
-      "_blank"
-    );
-  };
-
   return (
     <div className="bg-gray-50 overflow-x-hidden">
+      <SEO
+        title="About Dharmraj Surgical Technologies"
+        description="Learn about Dharmraj Surgical Technologies, a leading manufacturer and exporter of high-quality surgical instruments and medical equipment. Discover our expertise in manufacturing and repairing precision surgical tools."
+        canonicalUrl="https://yourdomain.com/about"
+        keywords="surgical instruments manufacturer, medical equipment supplier, surgical equipment repair, hospital instruments"
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-teal-800 text-white">
         <div className="container mx-auto px-4">
@@ -296,19 +291,16 @@ const AboutUs = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-white text-teal-800 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors text-lg font-semibold"
-                onClick={handleClick}
               >
                 Contact Us
               </motion.button>
-              <Link to="/products">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-teal-800 transition-colors text-lg font-semibold"
-                >
-                  View Products
-                </motion.button>
-              </Link>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-teal-800 transition-colors text-lg font-semibold"
+              >
+                View Products
+              </motion.button>
             </div>
           </motion.div>
         </div>
