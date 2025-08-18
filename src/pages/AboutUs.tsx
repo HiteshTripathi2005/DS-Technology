@@ -50,7 +50,7 @@ const AboutUs = () => {
       <SEO
         title="About Dharmraj Surgical Technologies"
         description="Learn about Dharmraj Surgical Technologies, a leading manufacturer and exporter of high-quality surgical instruments and medical equipment. Discover our expertise in manufacturing and repairing precision surgical tools."
-        canonicalUrl="https://yourdomain.com/about"
+        canonicalUrl="https://dharmrajsurgicaltechnologies.com//about"
         keywords="surgical instruments manufacturer, medical equipment supplier, surgical equipment repair, hospital instruments"
       />
       {/* Hero Section */}

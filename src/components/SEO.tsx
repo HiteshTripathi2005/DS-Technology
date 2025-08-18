@@ -11,7 +11,7 @@ interface SEOProps {
 const SEO = ({
   title,
   description,
-  canonicalUrl = "https://yourdomain.com",
+  canonicalUrl = "https://dharmrajsurgicaltechnologies.com/",
   ogImage = "./src/assets/logo.jpg",
   keywords = "hospital products, medical equipment, surgical instruments, healthcare supplies",
 }: SEOProps) => {

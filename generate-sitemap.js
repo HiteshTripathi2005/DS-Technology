@@ -31,7 +31,7 @@ const products = [
 
 // Create a sitemap stream
 const sitemap = new SitemapStream({
-  hostname: "https://yourdomain.com", // Replace with your actual domain
+  hostname: "https://dharmrajsurgicaltechnologies.com/", // Replace with your actual domain
 });
 
 // Add static pages

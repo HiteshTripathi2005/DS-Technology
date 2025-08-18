@@ -19,7 +19,7 @@ const Products = () => {
       <SEO
         title="Products Catalog"
         description="Browse our comprehensive catalog of high-quality surgical instruments and medical equipment. Find the perfect hospital products for your healthcare facility."
-        canonicalUrl="https://yourdomain.com/products"
+        canonicalUrl="https://dharmrajsurgicaltechnologies.com//products"
         keywords="surgical instruments, medical catalog, hospital equipment, healthcare products"
       />
       <motion.h2

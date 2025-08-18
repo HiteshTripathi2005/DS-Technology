@@ -17,7 +17,7 @@ const Home = () => {
       <SEO
         title="Home"
         description="Premium hospital products and medical equipment. We offer a wide range of surgical instruments and healthcare supplies for medical professionals."
-        canonicalUrl="https://yourdomain.com/"
+        canonicalUrl="https://dharmrajsurgicaltechnologies.com//"
       />
       <HeroSection />
       <FeaturesSection />
